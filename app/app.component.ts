@@ -5,7 +5,7 @@ import {AuthorsComponent} from './authors.component';
 // Then call the decorator (which is a function, that takes an object of properties/attributes)
 @Component({
     selector: 'my-app',
-    template: '<h1>Yo yo yo yo yo !!</h1><courses></courses><authors></authors>',
+    template: '<h1>Yo yo yo yo yo !!</h1><courses></courses><authors></authors><playlists></playlists>',
     directives: [CoursesComponent, AuthorsComponent] // Must be imported at the top of the file
 })
 export class AppComponent {
