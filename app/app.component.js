@@ -1,4 +1,4 @@
-System.register(['angular2/core', './courses.component', './authors.component'], function(exports_1, context_1) {
+System.register(['angular2/core', './courses.component', './authors.component', './playlists.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', './courses.component', './authors.component'],
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, courses_component_1, authors_component_1;
+    var core_1, courses_component_1, authors_component_1, playlists_component_1;
     var AppComponent;
     return {
         setters:[
@@ -22,6 +22,9 @@ System.register(['angular2/core', './courses.component', './authors.component'],
             },
             function (authors_component_1_1) {
                 authors_component_1 = authors_component_1_1;
+            },
+            function (playlists_component_1_1) {
+                playlists_component_1 = playlists_component_1_1;
             }],
         execute: function() {
             // Then call the decorator (which is a function, that takes an object of properties/attributes)
@@ -31,8 +34,8 @@ System.register(['angular2/core', './courses.component', './authors.component'],
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: '<h1>Yo yo yo yo yo !!</h1><courses></courses><authors></authors>',
-                        directives: [courses_component_1.CoursesComponent, authors_component_1.AuthorsComponent] // Must be imported at the top of the file
+                        template: '<h1>Yo yo yo yo yo !!</h1><courses></courses><authors></authors><playlists></playlists>',
+                        directives: [courses_component_1.CoursesComponent, authors_component_1.AuthorsComponent, playlists_component_1.PlaylistsComponent] // Must be imported at the top of the file
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
